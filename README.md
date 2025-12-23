@@ -1,6 +1,16 @@
 # Anaerobic Digester – Graef and Andrews Model (Simulink)
 
-This repository contains a reproducible implementation of the classical **Graef and Andrews (GA)** dynamic model for anaerobic digesters, developed in **MATLAB/Simulink**. The model integrates the biological, liquid, and gas phases of the process and includes a pH-based control strategy to prevent acidification.
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=luftmann-tec/Anaerobic_Digester_Graef_Andrews_model_and_control)
+
+## Author
+
+**Rodolfo Salazar Peña** - Chemical Engineer
+
+_Luftmann Technologies_
+
+## Description
+
+This repository contains a reproducible implementation of the classical **Graef and Andrews (GA)** dynamic model for anaerobic digesters, developed in **MATLAB/Simulink**; _AD_model.slx_. The model integrates the biological, liquid, and gas phases of the process and includes a pH-based control strategy to prevent acidification. A detailed description of the theoretical framework can be found in the supplementary resource _Anaerobic_Digester_Graef_and_Andrews_Model.pdf_. Parameters of the model in metric system are in _AnaerobicDigestorParameters.m_
 
 ## 📌 Overview
 
@@ -60,15 +70,15 @@ A **pH-based control system**, originally proposed by Graef and Andrews, is impl
 
 * Open-loop simulations with step changes in:
 
-  * Influent substrate concentration
+  * Influent substrate concentration: _run_AD_s.m_
 
-  * Influent flow rate
+  * Influent flow rate: _run_AD_F.m_
 
 * Closed-loop simulations comparing:
 
-  * Controlled vs. uncontrolled operation
+  * Controlled vs. uncontrolled operation: _run_AD_control.m_
 
-  * Acidification prevention under high organic loading
+  * Acidification prevention under high organic loading: _run_AD_s_control.m_
 
 ## 🧰 Requirements
 
@@ -80,11 +90,11 @@ A **pH-based control system**, originally proposed by Graef and Andrews, is impl
 
 ## 📚 References
 
-* Andrews, J.F., & Graef, S.P. (1971). _Dynamic Modeling and Simulation of the Anaerobic Digestion Process_.
+* Andrews, J.F., & Graef, S.P. (1971). Dynamic Modeling and Simulation of the Anaerobic Digestion Process, _Anaerobic Biological Treatment Processes_. Ed. by Frederick G. Pohland. Vol. 105. Advances in Chemistry. American Chemical Society, 1971. Chap. 8, pp. 126–162. doi:[10.1021/ba-1971-0105.ch008](https://doi.org/10.1021/ba-1971-0105.ch008).
 
-* Bailey, J.E., & Ollis, D.F. (1986). _Biochemical Engineering Fundamentals_.
+* Bailey, J.E., & Ollis, D.F. (1986). _Biochemical Engineering Fundamentals_.  2nd ed. Chemical Engineering Series. Singapore: McGraw-Hill, 1986.
 
-* Batstone et al. (2002). ADM1 Model.
+* W. Wesley Eckenfelder Jr. _Industrial Water Pollution Control_. 2nd ed. Civil Engineering Series. Singapore: McGraw-Hill, 1989.
 
 ## 🚀 Future Work
 
